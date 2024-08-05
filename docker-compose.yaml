@@ -38,7 +38,7 @@ services:
       context: ./
       args:
         KEYCLOAK_VERSION: 22.0.0
-    command: start --optimized --hostname-strict-backchannel=true --hostname="your domain"
+    command: 'start --optimized --hostname-strict-backchannel=true --hostname="your domain"'
     depends_on:
       - "postgres"
     environment:
