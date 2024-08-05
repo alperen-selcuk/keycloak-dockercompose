@@ -35,7 +35,7 @@ services:
   keycloak:
     container_name: keycloak
     build:
-      context: /root
+      context: ./
       args:
         KEYCLOAK_VERSION: 22.0.0
     command: start --optimized --hostname-strict-backchannel=true --hostname="your domain"
